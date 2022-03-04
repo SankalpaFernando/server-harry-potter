@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev ./app.ts",
-    "start": "node dist/index.js",
+    "start": "node dist/app.js",
     "postinstall": "tsc",
-    "watch-node": "nodemon dist/index.js",
+    "watch-node": "nodemon dist/app.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku main",
     "db:export": "ts-node-dev  ./util.ts"
