@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(router);
 
-const PORT = 5001 || process.env.PORT;
+const PORT =  process.env.PORT || 5000;
 
 app.listen(PORT, (): void => {
   console.log(`Server Started at PORT ${PORT}`);
