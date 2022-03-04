@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev ./app.ts",
-    "start": "tsc && node ./dist/app.js",
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "db:export": "ts-node-dev  ./util.ts"
   },
   "keywords": [],
