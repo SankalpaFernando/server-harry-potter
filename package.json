@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev ./app.ts",
-    "start:prod": "docker-compose up -d &&  tsc && node ./dist/app.js",
+    "start": "tsc && node ./dist/app.js",
     "db:export": "ts-node-dev  ./util.ts"
   },
   "keywords": [],
